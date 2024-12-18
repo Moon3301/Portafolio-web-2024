@@ -1,0 +1,44 @@
+.static-col {
+    position: sticky;
+    top: 0; /* Se queda estático en la parte superior */
+    color: #fff;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+}
+
+.scrollable-col {
+    height: 100%; /* Ajusta la altura total */
+    overflow-y: auto; /* Hace que esta columna sea desplazable */
+    color: #fff;
+}
+
+#about-line {
+    width: 50px;
+}
+
+.index-container {
+    
+    top: 100px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .index {
+    display: flex;
+    align-items: center;
+  }
+  
+  .line {
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .index p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
