@@ -1,6 +1,7 @@
 import { Component, HostListener  } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import {MatChipsModule} from '@angular/material/chips';
 
 type Experience = {
 
@@ -33,7 +34,7 @@ type Skill = {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule],
+  imports: [MatCardModule, MatButtonModule, MatChipsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -62,6 +63,30 @@ export class HomeComponent {
       startDate: new Date('2022-01-01'),
       endDate: new Date('2022-12-31'),
       company: 'Company C',
+      technologies: ['Java', 'Python', 'JavaScript']
+    }
+  ];
+
+  projects: Project[] = [
+    {
+      title: 'Project A',
+      description: 'Developing a project',
+      startDate: new Date('2020-01-01'),
+      endDate: new Date('2020-12-31'),
+      technologies: ['Java', 'Python', 'JavaScript']
+    },
+    {
+      title: 'Project B',
+      description: 'Developing a project',
+      startDate: new Date('2021-01-01'),
+      endDate: new Date('2021-12-31'),
+      technologies: ['Java', 'Python', 'JavaScript']
+    },
+    {
+      title: 'Project C',
+      description: 'Developing a project',
+      startDate: new Date('2022-01-01'),
+      endDate: new Date('2022-12-31'),
       technologies: ['Java', 'Python', 'JavaScript']
     }
   ];

@@ -1,8 +1,11 @@
 .static-col {
     position: sticky;
-    top: 0; /* Se queda estático en la parte superior */
+    /* Se queda estático en la parte central */
+    top: 30px;
     color: #fff;
     height: 100%; /* Ocupa toda la altura del contenedor */
+   
+    
 }
 
 .scrollable-col {
@@ -17,28 +20,34 @@
 
 .index-container {
     
-    top: 100px;
-    left: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  top: 100px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
   
-  .index {
-    display: flex;
-    align-items: center;
-  }
+.index {
+  display: flex;
+  align-items: center;
+}
   
-  .line {
-    width: 0;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    margin-right: 10px;
-    transition: width 0.5s ease-in-out;
-  }
-  
-  .index p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-  }
+.line {
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+.index p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.align-button {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(30, 30, 30);
+}
